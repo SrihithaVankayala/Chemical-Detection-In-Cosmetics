@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="contactinform">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span class="fa fa-map-marker"></span>
+                        <span>Nizampet<br>Hyderbad,Telangana</span>
+                    </li>
+                    <li>
+                        <span class="fa fa-envelope"></span>
+                        <span>pass2026@.com</span>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone"></span>
+                        <span>310-386-1623</span>
+                    </li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="contactinForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="first-name" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="last-name" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" name="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="tel" name="mobile" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea name="message" required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <button type="button" class="btn" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendMessage() {
+            // Logic to handle form submission can be added here (e.g., form validation, AJAX request, etc.)
+
+            // Redirect to the "Message sent" page
+            window.location.href = "message_sent.html";
+        }
+    </script>
+</body>
+</html>
